@@ -1,2 +1,2 @@
 # adityavinodk.github.io
-Personal Website
+Everthing you need to know about everything.
