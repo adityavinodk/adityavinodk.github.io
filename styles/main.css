@@ -15,7 +15,7 @@
 
 .post>a:focus,
 .post>a:hover {
-  color: gray;
+  color: rgb(137, 80, 80);
   text-decoration: none
 }
 
