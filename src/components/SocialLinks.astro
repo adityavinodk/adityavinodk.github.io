@@ -1,0 +1,26 @@
+---
+import envelope from '@fortawesome/fontawesome-free/svgs/solid/envelope.svg?raw';
+import twitter from '@fortawesome/fontawesome-free/svgs/brands/twitter.svg?raw';
+import github from '@fortawesome/fontawesome-free/svgs/brands/github.svg?raw';
+import linkedin from '@fortawesome/fontawesome-free/svgs/brands/linkedin.svg?raw';
+import youtube from '@fortawesome/fontawesome-free/svgs/brands/youtube.svg?raw';
+import instagram from '@fortawesome/fontawesome-free/svgs/brands/instagram.svg?raw';
+import facebook from '@fortawesome/fontawesome-free/svgs/brands/facebook.svg?raw';
+
+const links = [
+  { label: 'Email', href: 'mailto:ads.vinodk@gmail.com', icon: envelope },
+  { label: 'Twitter', href: 'https://twitter.com/adityavinodk', icon: twitter },
+  { label: 'GitHub', href: 'https://github.com/adityavinodk', icon: github },
+  { label: 'LinkedIn', href: 'https://linkedin.com/in/adityavinodk/', icon: linkedin },
+  { label: 'YouTube', href: 'https://www.youtube.com/channel/UCqEo9Fk5C6qp7DAaj4FbuIA', icon: youtube },
+  { label: 'Instagram', href: 'https://instagram.com/adityavinodk', icon: instagram },
+  { label: 'Facebook', href: 'https://facebook.com/adityavinodk', icon: facebook },
+];
+---
+<div class="social-links" aria-label="Social links">
+  {links.map(({ label, href, icon }) => (
+    <a href={href} aria-label={label}>
+      <span class="social-icon" aria-hidden="true" set:html={icon} />
+    </a>
+  ))}
+</div>

@@ -1,0 +1,44 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/main.css';
+
+interface Props {
+  title: string;
+  description: string;
+  canonicalPath: string;
+  currentPage?: 'home' | 'pages';
+  bodyClass?: string;
+}
+const { title, description, canonicalPath, currentPage, bodyClass } = Astro.props;
+const canonical = new URL(canonicalPath, Astro.site);
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="author" content="Aditya Vinod Kumar" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <link rel="icon" href="/assets/logo.png" />
+    <link rel="canonical" href={canonical} />
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=UA-134785427-1"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-134785427-1');
+    </script>
+  </head>
+  <body class={bodyClass}>
+    <Header currentPage={currentPage} />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
