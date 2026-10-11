@@ -1,57 +1,8 @@
-<!doctype html>
-<html lang="en" class="h-100">
-
-<head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134785427-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'UA-134785427-1');
-    </script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Page2">
-    <meta name="author" content="Aditya Vinod Kumar">
-    <meta name="generator" content="Jekyll v3.8.5">
-    <title>Adventures on a Cycle</title>
-    <link rel="icon" href="../assets/logo.png">
-    <link rel="canonical" href="./cycling.html">
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css"
-        integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/solid.css"
-        integrity="sha384-r/k8YTFqmlOaqRkZuSiE9trsrDXkh07mRaoGBMoDcmA58OHILZPsk29i2BsFng1B" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/regular.css"
-        integrity="sha384-IG162Tfx2WTn//TRUi9ahZHsz47lNKzYOp0b6Vv8qltVlPkub2yj9TVwzNck6GEF" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/brands.css"
-        integrity="sha384-BKw0P+CQz9xmby+uplDwp82Py8x1xtYPK3ORn/ZSoe6Dk3ETP59WCDnX+fI1XCKK" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/fontawesome.css"
-        integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles/main.css">
-
-</head>
-
-<body class="d-flex flex-column h-100 rel_pos">
-    <header class="site-header">
-        <div class="container header-inner">
-            <a class="site-name" href="../">Aditya VK</a>
-            <nav class="site-nav" aria-label="Main navigation">
-                <a href="../">Home</a>
-                <a href="../pages/">Pages</a>
-            </nav>
-        </div>
-    </header>
-    <!-- Begin page content -->
-    <main role="main" class="flex-shrink-0">
-        <div class="container">
-            <a class="article-back-link" href="./"><span aria-hidden="true">←</span> Pages</a>
-            <h1 class="display-4" style="position: relative;">Adventures on a Cycle</h1>
-            <p class="date">Written on 18th February, 2019</p>
-            <p>
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+---
+<ArticleLayout title="Adventures on a Cycle" date="Written on 18th February, 2019" description="Page2" canonicalPath="/pages/cycling">
+<p>
                 I have always found the beauty of traveling to be a very personal joy. It is about witnessing beautiful
                 sights, meeting new people with rich cultures and wonderful characters, understanding tradition and
                 history, connecting yourself with nature once again and making everlasting memories. One of my favorite
@@ -73,7 +24,7 @@
                 can get past anybody stuck in traffic, something I am sure anybody can relate to. <br><br>
 
                 <video class="centre_image rel_pos" loop muted controls playsinline preload="metadata">
-                    <source src="../assets/cycle.mp4">
+                    <source src="/assets/cycle.mp4">
                     Your browser does not support the video tag.
                 </video> <br><br>
 
@@ -102,24 +53,4 @@
                 There is so much more for me to see in this city. It’s just a matter of when.
 
             </p>
-        </div>
-
-    </main>
-
-    <footer class="footer mt-auto py-3">
-        <div class="container">
-            <span class="text-muted">Copyright © 2019 Aditya Vinod Kumar </span>
-        </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"
-        integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous">
-    </script>
-</body>
-
-</html>
+</ArticleLayout>
