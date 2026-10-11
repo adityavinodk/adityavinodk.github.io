@@ -31,76 +31,69 @@
         integrity="sha384-BKw0P+CQz9xmby+uplDwp82Py8x1xtYPK3ORn/ZSoe6Dk3ETP59WCDnX+fI1XCKK" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/fontawesome.css"
         integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="styles/main.css">
 
 </head>
 
-<body class="d-flex flex-column h-100">
+<body class="d-flex flex-column h-100 home-page">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="site-name" href="./">Aditya VK</a>
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="./" aria-current="page">Home</a>
+                <a href="./pages/">Pages</a>
+            </nav>
+        </div>
+    </header>
     <!-- Begin page content -->
     <main role="main" class="flex-shrink-0">
-        <div class="container">
-            <h1 class="display-2">Aditya VK</h1>
-            <img src="assets/noir_profile.png" alt="profile picture" width=225px height=350px>
-            <p class="lead"></p>
-            <a href="mailto:ads.vinodk@gmail.com"><i class="fas fa-envelope fa-lg" style="color: #010101"></i></a>
-            <a href="https://twitter.com/adityavinodk"><i class="fab fa-twitter fa-lg" style="color: #010101"></i></a>
-            <a href="https://github.com/adityavinodk"><i class="fab fa-github fa-lg" style="color: #010101"></i></a>
-            <a href="https://linkedin.com/in/adityavinodk/"><i class="fab fa-linkedin fa-lg"
-                    style="color: #010101"></i></a>
-            <a href="https://www.youtube.com/channel/UCqEo9Fk5C6qp7DAaj4FbuIA"><i class="fab fa-youtube fa-lg"
-                    style="color: #010101"></i></a>
-            <a href="https://instagram.com/adityavinodk"><i class="fab fa-instagram fa-lg"
-                    style="color: #010101"></i></a>
-            <a href="https://facebook.com/adityavinodk"><i class="fab fa-facebook fa-lg"
-                    style="color: #010101"></i></a><br><br>
-            <a href="https://www.dropbox.com/scl/fi/c9qkvekoxhbumixstgigs/Aditya-Resume-Work.pdf?rlkey=2tj07sxmn0srtkuyo9skettdj&dl=0" target="_blank"><button
-                    type="button" class="btn btn-dark btn-lg">Resume</button></a><br>
-        </div><br>
-        <div class="container">
-            <h4>You can call me Adi. Here is a look into what I do, think and feel. </h4>
-            <p>
-                I am currently pursuing a Masters of Science in Computer Science at New York University - Courant
-                Institute of Mathematical Sciences. 
-                <br><br>
-                I love to build scalable products with technology. 
-                I characterize myself as having a knack for product thinking with a passion for engineering. 
-                <br><br>
-                I love devising new and extrapolating existing strategies for solving problems within any 
-                convention of problem solving. In Computer Science, I derive this joy using algorithms. 
-                Some of my most memorable experiences with CS have come from figuring out a new algorithm 
-                or data structure to solve a problem. I am also extremely passionate about Distributed Systems, 
-                Machine Learning and large Software Architectures.
-                <br><br>
-                I have professional experience working with several technologies such as 
-                Full-Stack Development, Cloud Computing, and Machine Learning. I have also worked 
+        <div class="container hero">
+            <div class="hero-copy">
+                <h1 class="display-2">Aditya VK</h1>
+                <h4 class="hero-intro">You can call me Adi. Here is a look into what I do, think and feel. </h4>
+                <div aria-label="Social links" class="social-links">
+<a aria-label="Email" href="mailto:ads.vinodk@gmail.com"><i aria-hidden="true" class="fas fa-envelope fa-lg"></i></a>
+<a aria-label="Twitter" href="https://twitter.com/adityavinodk"><i aria-hidden="true" class="fab fa-twitter fa-lg"></i></a>
+<a aria-label="GitHub" href="https://github.com/adityavinodk"><i aria-hidden="true" class="fab fa-github fa-lg"></i></a>
+<a aria-label="LinkedIn" href="https://linkedin.com/in/adityavinodk/"><i aria-hidden="true" class="fab fa-linkedin fa-lg"></i></a>
+<a aria-label="YouTube" href="https://www.youtube.com/channel/UCqEo9Fk5C6qp7DAaj4FbuIA"><i aria-hidden="true" class="fab fa-youtube fa-lg"></i></a>
+<a aria-label="Instagram" href="https://instagram.com/adityavinodk"><i aria-hidden="true" class="fab fa-instagram fa-lg"></i></a>
+<a aria-label="Facebook" href="https://facebook.com/adityavinodk"><i aria-hidden="true" class="fab fa-facebook fa-lg"></i></a>
+</div>
+                <a class="btn btn-dark resume-link" href="https://www.dropbox.com/scl/fi/c9qkvekoxhbumixstgigs/Aditya-Resume-Work.pdf?rlkey=2tj07sxmn0srtkuyo9skettdj&dl=0" target="_blank" rel="noopener noreferrer">Resume</a>
+            </div>
+            <img class="profile-image" src="assets/noir_profile.png" alt="profile picture" width="225" height="350">
+        </div>
+        <div class="container biography">
+            <p>I am currently pursuing a Masters of Science in Computer Science at New York University - Courant
+                Institute of Mathematical Sciences.</p>
+            <p>I love to build scalable products with technology.
+                I characterize myself as having a knack for product thinking with a passion for engineering.</p>
+            <p>I love devising new and extrapolating existing strategies for solving problems within any
+                convention of problem solving. In Computer Science, I derive this joy using algorithms.
+                Some of my most memorable experiences with CS have come from figuring out a new algorithm
+                or data structure to solve a problem. I am also extremely passionate about Distributed Systems,
+                Machine Learning and large Software Architectures.</p>
+            <p>I have professional experience working with several technologies such as
+                Full-Stack Development, Cloud Computing, and Machine Learning. I have also worked
                 on several projects involving Deep Learning and Reinforcement Learning. I constantly
-                spend time learning about these topics.
-                <br><br>
-                I am a tech-optimist and love to keep up with all the trends in our burgeoning generation. 
-                <br><br>
-                I love reading and learning more about history, life sciences and the path forward for our 
-                generation.  
-                I am very interested in world affairs, foreign policy and current market trends. 
-                I read newsletters everyday on these topics.
-                <br><br>
-                I am an avid conversationalist. I love to talk, connect with people, hear everybody's stories and
-                add more to their life. My close friends have added more to my life than I could have asked for.
-                <br><br>
-                I am a public speaker with a knack for debating and love to voice my opinions
-                and be heard. 
-                <br><br>
-                I am a fitness freak, constantly working towards pushing my limits on strength and endurance.
-                I love to play tennis and consider myself an ardent fan.
-                <br><br>
-                I love to VLOG and do Acts, aspiring to become a content creator. The video medium 
-                for sharing stories is a beautiful format that I believe enriches our lives.
-            </p>
-            <h4>I am all about the Flow - any concluded sensible thought from start to end. </h4>
+                spend time learning about these topics.</p>
+            <p>I am a tech-optimist and love to keep up with all the trends in our burgeoning generation.</p>
+            <p>I love reading and learning more about history, life sciences and the path forward for our
+                generation.
+                I am very interested in world affairs, foreign policy and current market trends.
+                I read newsletters everyday on these topics.</p>
+            <p>I am an avid conversationalist. I love to talk, connect with people, hear everybody's stories and
+                add more to their life. My close friends have added more to my life than I could have asked for.</p>
+            <p>I am a public speaker with a knack for debating and love to voice my opinions
+                and be heard.</p>
+            <p>I am a fitness freak, constantly working towards pushing my limits on strength and endurance.
+                I love to play tennis and consider myself an ardent fan.</p>
+            <p>I love to VLOG and do Acts, aspiring to become a content creator. The video medium
+                for sharing stories is a beautiful format that I believe enriches our lives.</p>
+            <h4 class="closing-thought">I am all about the Flow - any concluded sensible thought from start to end. </h4>
             <!--<h3>Subscribe to my Youtube Channel for the most entertaining travel, cuisine-->
                 <!--vlogs and comedic acts!</h3>-->
-            <br>
-            <a href="https://adityavinodk.github.io/pages"><button type="button"
-                    class="btn btn-dark btn-lg">Pages</button></a>
         </div>
     </main>
 
