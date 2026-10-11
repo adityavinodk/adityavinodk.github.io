@@ -10,10 +10,14 @@ interface Props {
 const { title, date, description, canonicalPath } = Astro.props;
 ---
 <SiteLayout title={title} description={description} canonicalPath={canonicalPath}>
-  <div class="container">
-    <a class="article-back-link" href="/pages/"><span aria-hidden="true">←</span> Pages</a>
-    <h1 class="display-4">{title}</h1>
-    <p class="date">{date}</p>
-    <slot />
+  <div class="container article">
+    <header class="article-header">
+      <a class="article-back-link" href="/pages/"><span aria-hidden="true">←</span> Pages</a>
+      <h1 class="display-4">{title}</h1>
+      <p class="date">{date}</p>
+    </header>
+    <div class="article-body">
+      <slot />
+    </div>
   </div>
 </SiteLayout>
